@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería ilustraciones</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/564x/4e/2b/77/4e2b772737ed850db88bae8d81ae006d.jpg"
+    />
+    <!-- Tailwindcss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Enlace CDN de Google Fonts para Fira Code -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c75966c600.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        font-family: "Fira Code", monospace;
+      }
+      h1,
+      p {
+        font-family: "Fira Code", monospace;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800">
+      <section class="container mx-auto">
+        <section class="flex items-center justify-between py-4">
+          <a href="/index.html" class="text-white text-xl font-semibold"
+            >Galería de ilustraciones</a
+          >
+
+          <ul class="flex space-x-10">
+            <li>
+              <a href="/gallery.html" class="text-gray-300 hover:text-white"
+                >Galería</a
+              >
+            </li>
+            <li>
+              <a href="/contact.html" class="text-gray-300 hover:text-white"
+                >Se parte del equipo
+                <i class="fa-solid fa-lightbulb" style="color: #ffd43b"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </nav>
+
+    <main>
+      <section class="max-w-lg mx-auto mb-10">
+        <h2 class="text-white text-3xl text-center font-semibold m-4">
+          Contribuye a la comunidad
+        </h2>
+        <p class="text-white text-lg text-center">
+          Únete a nuestro equipo en la galería de ilustraciones y sé parte de
+          una comunidad creativa apasionada. Desde artistas emergentes hasta
+          expertos en diseño, ofrecemos un espacio donde tus talentos pueden
+          brillar. Con oportunidades de colaboración, exposición y crecimiento
+          personal, <b>¡te invitamos a formar parte de nuestro vibrante mundo de
+          arte e inspiración!</b>
+        </p>
+      </section>
+
+      <section class="max-w-xl mx-auto bg-white rounded p-6 text-black">
+        <form>
+          <section class="mb-4">
+            <label for="nombre" class="block text-gray-700 font-semibold mb-2"
+              >Nombre:</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              placeholder="Ingrese su nombre"
+            />
+          </section>
+          <section class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold mb-2"
+              >Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              placeholder="Ingrese su email"
+            />
+          </section>
+          <section class="mb-4">
+            <label for="telefono" class="block text-gray-700 font-semibold mb-2"
+              >Teléfono:</label
+            >
+            <input
+              type="number"
+              id="telefono"
+              name="telefono"
+              class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              placeholder="Ingrese su teléfono"
+            />
+          </section>
+          <section class="mb-4">
+            <label for="birthday" class="block text-gray-700 font-semibold mb-2"
+              >Fecha de nacimiento:</label
+            >
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              placeholder="Ingrese su fecha de nacimiento"
+            />
+          </section>
+
+          <section class="mb-4">
+            <label
+              for="area_trabajo"
+              class="block text-gray-700 font-semibold mb-2"
+              >Selecciona tu área de trabajo</label
+            >
+            <select
+              name="area_trabajo"
+              id="area_trabajo"
+              class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+            >
+              <option>Artista/Ilustrador</option>
+              <option>Marketing digital</option>
+              <option>Desarrollo de software</option>
+              <option>Talento humano</option>
+              <option>Diseñador</option>
+              <option>Copy writer</option>
+            </select>
+          </section>
+
+          <section class="mb-4">
+            <label
+              for="trabajo_artista"
+              class="block text-gray-700 font-semibold mb-2"
+              >Si eres artista compártenos tu trabajo</label
+            >
+            <input
+              type="file"
+              name="trabajo_artista"
+              id="trabajo_artista"
+              class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+            />
+          </section>
+
+          <section class="mb-4">
+            <label for="mensaje" class="block text-gray-700 font-semibold mb-2"
+              >Cuéntanos sobre tu trabajo:</label
+            >
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+              placeholder="Ingrese su mensaje"
+            ></textarea>
+          </section>
+
+          <section class="mb-4">
+            <label for="terminos_condiciones" class="inline-flex items-center">
+              <input
+                type="checkbox"
+                name="terminos_condiciones"
+                id="terminos_condiciones"
+                class="form-checkbox border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+              />
+              <span class="ml-2">Acepto términos y condiciones</span>
+            </label>
+          </section>
+
+          <section class="mb-4">
+            <label for="" class="inline-flex items-center">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-checkbox border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+              />
+              <span class="ml-2"
+                >Quiero recibir notificaciones sobre publicación de nuevo
+                contenido</span
+              >
+            </label>
+          </section>
+
+          <section class="text-center">
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Enviar
+            </button>
+          </section>
+        </form>
+      </section>
+
+      <section class="max-w-xl mx-auto mt-10 mb-10">
+        <h3 class="text-white text-xl text-center font-semibold m-4">¿Dónde nos puedes encontrar?</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.973347266312!2d-74.07618390510841!3d4.596409675872666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a844cf79cb%3A0xa58d1864daa71331!2sLa%20Candelaria%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1710709657573!5m2!1ses-419!2sco"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10 mt-10">
+      <section class="container mx-auto flex justify-between items-center px-4">
+        <p>Powered by Leonardo Caicedo &copy; 2024 Galería de Ilustraciones</p>
+        <ul class="flex space-x-4">
+          <li><a href="/index.html" class="hover:text-gray-300">Inicio</a></li>
+          <li>
+            <a href="/gallery.html" class="hover:text-gray-300">Galería</a>
+          </li>
+          <li>
+            <a href="/artists.html" class="text-gray-300 hover:text-white"
+              >Artistas</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="hover:text-gray-300">Contacto</a>
+          </li>
+          <li>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube" style="color: #af0d26"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://pinterest.com" target="_blank"
+              ><i class="fa-brands fa-pinterest" style="color: #af0d26"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
